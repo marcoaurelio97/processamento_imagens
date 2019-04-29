@@ -17,12 +17,12 @@ def main():
     for contour in contours:
         x, y, w, h = cv2.boundingRect(contour)
         roi = img_original[y:y+h, x:x+w]
-        cv2.imwrite('dado_recortado.jpg', roi)
+        # cv2.imwrite('dado_recortado.jpg', roi)
 
-        dado = cv2.imread('dado_recortado.jpg', cv2.IMREAD_GRAYSCALE)
+        # dado = cv2.imread('dado_recortado.jpg', cv2.IMREAD_GRAYSCALE)
 
         detector = cv2.SimpleBlobDetector_create()
-        keypoints = detector.detect(dado)
+        keypoints = detector.detect(roi)
 
         if len(keypoints) > 0:
             cv2.putText(img_original, str(len(keypoints)), (x+w-55, y+h-40),
@@ -30,7 +30,7 @@ def main():
 
     cv2.imshow('Dados', img_original)
 
-    os.remove('dado_recortado.jpg')
+    # os.remove('dado_recortado.jpg')
 
     cv2.waitKey(0)
     cv2.destroyAllWindows()

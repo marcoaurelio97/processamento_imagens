@@ -6,8 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/projeto2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projeto1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/projeto1/imagens" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projeto4" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (processamento_imagens)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
